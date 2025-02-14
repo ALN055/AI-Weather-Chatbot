@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ```
 
 ### Setup `.env` File
-Create a `.env` file in the root directory and add the following:
+Update Your `.env` file in the root directory and add the following:
 ```ini
 WEATHER_API_KEY=your_openweather_api_key
 OLLAMA_MODEL=llama3.2:3b-instruct-fp16
