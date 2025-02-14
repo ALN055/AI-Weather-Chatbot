@@ -11,7 +11,7 @@ from langchain.docstore import InMemoryDocstore
 import faiss
 from langchain.llms import BaseLLM
 
-WEATHER_API_KEY = "bd7523227e2c7261f73319a905277e5f"  # Replace with your actual key
+WEATHER_API_KEY = ""  # Replace with your actual key
 
 # Path to your local Llama model
 model_name = "llama3.2:3b-instruct-fp16"  # Update with your model name
