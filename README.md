@@ -47,7 +47,7 @@ Replace `your_openweather_api_key` with your actual OpenWeatherMap API key.
 
 ### Run the Application
 ```sh
-python main.py
+python WeatherApp.py
 ```
 
 ## 🛠 Usage
