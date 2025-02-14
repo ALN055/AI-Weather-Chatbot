@@ -10,11 +10,15 @@ from sentence_transformers import SentenceTransformer
 from langchain.docstore import InMemoryDocstore
 import faiss
 from langchain.llms import BaseLLM
+from dotenv import load_dotenv
+import os
 
-WEATHER_API_KEY = "bd7523227e2c7261f73319a905277e5f"  # Replace with your actual key
+# Load environment variables from the .env file
+load_dotenv()
 
-# Path to your local Llama model
-model_name = "llama3.2:3b-instruct-fp16"  # Update with your model name
+# Fetch the API key and model name from environment variables
+WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")  # Use the environment variable for the API key
+model_name = os.getenv("MODEL_NAME")  # Use the environment variable for the model name
 
 # Create a custom LangChain LLM wrapper for Ollama
 class OllamaLLM(BaseLLM):
@@ -229,9 +233,3 @@ reset_button.pack(side=ctk.LEFT, padx=(10, 0))
 
 root.bind('<Return>', chat)
 root.mainloop()
-
-
-
-
-
-

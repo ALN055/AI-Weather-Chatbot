@@ -5,3 +5,5 @@ ollama
 langchain
 sentence-transformers
 faiss-cpu
+numpy
+python-dotenv
