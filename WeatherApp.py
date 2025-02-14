@@ -13,11 +13,16 @@ from langchain.llms import BaseLLM
 from dotenv import load_dotenv
 import os
 
-WEATHER_API_KEY = "bd7523227e2c7261f73319a905277e5f"  # Replace with your actual key
+# Load environment variables from the .env file
+load_dotenv()
 
 # Fetch the API key and model name from environment variables
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")  # Use the environment variable for the API key
 model_name = os.getenv("MODEL_NAME")  # Use the environment variable for the model name
+
+# Debugging statements to check if the environment variables are loaded correctly
+print(f"WEATHER_API_KEY: {WEATHER_API_KEY}")
+print(f"MODEL_NAME: {model_name}")
 
 # Create a custom LangChain LLM wrapper for Ollama
 class OllamaLLM(BaseLLM):
