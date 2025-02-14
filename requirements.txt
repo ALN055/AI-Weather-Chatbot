@@ -1,0 +1,7 @@
+customtkinter
+requests
+Pillow
+ollama
+langchain
+sentence-transformers
+faiss-cpu
