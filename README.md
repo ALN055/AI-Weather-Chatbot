@@ -28,7 +28,7 @@ Make sure you have the following installed:
 
 ### Clone Repository
 ```sh
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/ALN055/AI-Weather-Chatbot.git 
 cd YOUR_REPOSITORY
 ```
 
